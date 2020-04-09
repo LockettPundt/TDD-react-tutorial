@@ -26,6 +26,7 @@ describe('<NewMessageForm />', () => {
         },
       );
 
+
       fireEvent.click(getByTestId('sendButton'));
     });
     it('clears the text field', () => {
