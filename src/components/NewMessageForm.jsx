@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 const NewMessageForm = ({ onSend }) => {
   const [inputText, setInputText] = useState('');
 
-
   const handleTextChange = (e) => {
     setInputText(e.target.value);
   };
