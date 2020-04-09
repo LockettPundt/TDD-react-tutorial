@@ -1,0 +1,10 @@
+/* eslint-disable no-undef */
+describe('Creating a message', () => {
+  it('displays the message in a list', () => {
+    cy.visit('http://localhost:3000');
+    cy.get('[data-testid="messageText"]').type('New message');
+    cy.get('[data-testid="sendButton"]').click();
+    cy.get('[data-testid="messageText"]').should('have.value', '');
+    cy.contains('New message');
+  });
+});
